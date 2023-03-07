@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ITIS3135 | Connor Harris' Cuddly Hammerhead | Tables</title>
+    <link href="styles/default.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <style>
+        #fancytable
+        {
+            padding: 15px;
+            tr:nth-child(even) 
+            {
+                background-color: #f2f2f2;
+            }
+
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>ITIS3135 Connor Harris' Cuddly Hammerhead</h1>
+        <nav id="siteLinks">
+            <a href="index.html">Home</a> |
+            <a href="Introduction.html"> Introduction</a> |
+            <a href=""> Contract</a> |
+            <a href="tables.html"> Tables</a> |
+            <a href="forms.html"> Form</a> |
+            <a href=""> More later</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>HTML Tables</h2>
+        <h3>Data:</h3>
+        <p>Name - Email - Years of service</p>
+        <ol>
+            <li>Wes Abernathy - waber@aol.com - 50</li>
+            <li>Katherine Clive - kcliv@aol.com - 22</li>
+            <li>Tom Baker - tbake@aol.com - 19</li>
+            <li>Alice White - awhit@aol.com - 30</li>
+            <li>Bob Gibson - bgibs@aol.com - 28</li>
+            <li>Jimmy Papadokalis - jpapa@aol.com - 9</li>
+            <li>Sarah Jane - sjane@aol.com - 24</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table:</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Wes Abernathy</td>
+                <td>waber@aol.com</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Katherine Clive</td>
+                <td>kcliv@aol.com</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Tom Baker</td>
+                <td>tbake@aol.com</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Alice White</td>
+                <td>awhit@aol.com</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Bob Gibson</td>
+                <td>bgibs@aol.com</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Jimmy Papadokalis</td>
+                <td>jpapa@aol.com</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Sarah Jane</td>
+                <td>sjane@aol.com</td>
+                <td>24</td>
+            </tr>
+        </table>
+
+
+            <h3>Employee Data in Complex Table:</h3>
+        <figure>
+            <table id ='fancytable'>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>salary</th>
+                </tr>
+                <tr>
+                    <th rowspan="2" id="Slaes">Slaes</th>
+                    <td>Wes Abernathy</td>
+                    <td>waber@aol.com</td>
+                    <td>50</td>
+                    <td>100,000</td>
+                </tr>
+                <tr>
+                    <td>Katherine Clive</td>
+                    <td>kcliv@aol.com</td>
+                    <td>22</td>
+                    <td>85,000</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" id="Security">Security</th>
+                    <td>Tom Baker</td>
+                    <td>tbake@aol.com</td>
+                    <td>19</td>
+                    <td>90,000</td>
+                </tr>
+                <tr>
+                    <td>Alice White</td>
+                    <td>awhit@aol.com</td>
+                    <td>30</td>
+                    <td>92,000</td>
+                </tr>
+                <tr>
+                    <td>Bob Gibson</td>
+                    <td>bgibs@aol.com</td>
+                    <td>28</td>
+                    <td>79,000</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" id="Management">Management</th>
+                    <td>Jimmy Papadokalis</td>
+                    <td>jpapa@aol.com</td>
+                    <td>9</td>
+                    <td>72,000</td>
+                </tr>
+                <tr>
+                    <td>Sarah Jane</td>
+                    <td>sjane@aol.com</td>
+                    <td>24</td>
+                    <td>80,000</td>
+                </tr>
+            </table>
+            <figcaption>Employee Information</figcaption>
+        </figure>
+
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <a href="../index.html">CLT Home</a> |
+            <a href="https://github.com/The-Real-Connor-Harris">Github.com</a> |
+            <a href="https://github.com/The-Real-Connor-Harris/The-Real-Connor-Harris.github.io">Github.io</a> |
+            <a href="https://github.com/The-Real-Connor-Harris/itis3135">Github 3135</a> |
+            <a href="https://www.freecodecamp.org/The-Real-Connor-Harris">freecodecamp</a> |
+            <a href="https://www.codecademy.com/profiles/The-Real-Connor-Harris">codeacademy</a> |
+            <a href="https://www.linkedin.com/in/connor-harris-24a98018a/">Linkdin</a>
+        </nav>
+        <p>site designed by Connor Harris. &copy;2023</p>
+    </footer>
+
+    <script src="scripts/default.js"></script>
+
+
+</body>
+
+</html>
